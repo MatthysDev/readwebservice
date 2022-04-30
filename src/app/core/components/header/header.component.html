@@ -1,0 +1,30 @@
+<mat-toolbar color="primary">
+  <mat-icon></mat-icon>
+  &nbsp; &nbsp;
+  <button
+    mat-button
+    style="align-items: center; text-align: center; justify-content: center"
+  >
+    <a href="">
+      <mat-icon>home</mat-icon>
+    </a>
+  </button>
+  <button mat-button [matMenuTriggerFor]="menu">Books</button>
+  <mat-menu #menu="matMenu">
+    <a href="books" class="menu">
+      <button mat-menu-item>Books list</button>
+    </a>
+    <a href="books/books-form" class="menu">
+      <button mat-menu-item>Add books</button>
+    </a>
+  </mat-menu>
+  &nbsp;
+  <a href="authors">
+    <button mat-button>Authors</button>
+  </a>
+  &nbsp;
+  <a href="kinds">
+    <button mat-button>Kinds</button>
+  </a>
+  <span class="example-spacer"></span>
+</mat-toolbar>
